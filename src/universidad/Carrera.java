@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 public class Carrera {
     String listado = "";
-    
+    ///nuevo metodo
     public String ListarCarreras(){
         try {
             String sqlListadoCarreras = "select * from Carrera";
@@ -32,12 +32,10 @@ public class Carrera {
                         objResultSet.getString("codigo")  +
                         ")";
                 listado = listado + ", ";
-            }
-            
+            }            
         } catch (SQLException ex) {
             Logger.getLogger(Carrera.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
+        }        
         return listado;
     }
 }
