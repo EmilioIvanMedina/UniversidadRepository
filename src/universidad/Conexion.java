@@ -25,7 +25,7 @@ public class Conexion {
             attrConexion = DriverManager.getConnection(url, user, pass);
             
             if (attrConexion != null){
-                System.out.println("Conexion establecida");
+                System.out.println("Conexion establecida. Continuar");
             }            
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
