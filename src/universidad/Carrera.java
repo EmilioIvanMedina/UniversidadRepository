@@ -23,6 +23,7 @@ public class Carrera {
             ResultSet objResultSet = objPreparedStatment.executeQuery();
             
             while(objResultSet.next()){
+                ///Vamos a escribir el listado
                 listado = 
                         listado + 
                         objResultSet.getInt("idCarrera") +
